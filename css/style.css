@@ -1,0 +1,624 @@
+:root {
+    --primary-color-1: #e7e6e6af;
+    --primary-color-2: #01589f;
+    --secondary-color-1: #428bca;
+  }
+  body {
+    font-family: "League Spartan", sans-serif;
+    background-color: var(--primary-color-1);
+    margin: 0px;
+  }
+  /* Color for h2 and h3 */
+  h2,
+  h3 {
+    color: var(--secondary-color-1);
+  }
+  /* Removes the underline for links and sets their color */
+  a {
+    text-decoration: none;
+    color: var(--secondary-color-1);
+    scroll-behavior: smooth;
+  }
+  /*Style for the first container */
+  .first-container {
+    align-items: center;
+    background-color: var(--primary-color-2);
+    margin: 0px;
+    color: whitesmoke;
+  }
+  /* style for the link inside the first container */
+  .first-container a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  /* Style for the secoond container */
+  .second-container {
+    text-align: center;
+  }
+  /* Style for the card container */
+  .second-card-container {
+    flex-wrap: wrap;
+  }
+  /* CSS to set equal width to all the div inside second container */
+  .second-card-container > div {
+    margin-bottom: 30px;
+    flex: 1;
+  }
+  /* Style for the card in second container */
+  .second-card {
+    background-color: white;
+    height: 100%;
+    padding: 20px;
+    border-radius: 9px;
+  }
+  /* Style for the image inside the second container */
+  .second-card-container img {
+    width: 100%;
+    height: 200px;
+  }
+  /* Style for the third container */
+  .third-container {
+    display: flex;
+    margin: 20px 0px;
+    padding: 30px 0px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color-2);
+    color: white;
+    flex-wrap: wrap;
+  }
+  /* Setting font size of the paragraph in the third container */
+  .third-container p {
+    font-size: 120%;
+  }
+  /* Setting color of the h2 tag inside third container */
+  .third-container h2 {
+    color: white;
+  }
+  /* Setting color of the anchor tag inside the third container */
+  .third-container a {
+    color: white;
+  }
+  /* Setting the width of all the div inside the third container equal */
+  .third-container > div {
+    flex: 1;
+  }
+  /* Styling for blue button */
+  .custom-btn {
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+      4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  /* Styling for the blue button */
+  .btn {
+    background: #0075cf;
+    border: none;
+    z-index: 1;
+    font-size: 1.2rem;
+  }
+    /* Styling for the blue button */
+  .btn:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #00599d;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+      4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+    /* Styling for the blue button */
+  .btn:hover {
+    color: #fff;
+  }
+    /* Styling for the blue button */
+  .btn:hover:after {
+    left: 0;
+    width: 100%;
+  }
+    /* Styling for the blue button */
+  .btn:active {
+    top: 2px;
+  }
+  .button{
+    margin-top: 40px;
+  }
+  /* Styling the fourth container */
+  .fourth-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+
+  /* Style for the container for the grid format */
+  .fourth-container-grid {
+    display: grid;
+    gap: 30px;
+    cursor: pointer;
+  }
+  /* Styling the card for the fourth container */
+  .fourth-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  /* Styling the image for the card inside the fourth container */
+  .fourth-card-image {
+    width: 240px;
+    height: 230px;
+  }
+  .fourth-card-image img {
+    width: 100%;
+    height: 100%;
+  }
+  /* Styling for the fifth container */
+  .fifth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-color-2);
+    color: white;
+    padding: 1;
+    padding: 2% 0%;
+  }
+  /* Giving equal length to the divs inside fifth container */
+  .fifth-container > div {
+    flex: 1;
+  }
+  /* Style for fifth container image*/
+  .fifth-container-image > img {
+    width: 100%;
+     height: 30%;
+    }
+  /* Styling the content part of the fifth container */
+  .fifth-container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Assigning the text color to the pannel inside the fifth container */
+  .fifth-container .panel {
+    color: black;
+  }
+  /* Style for accordin */
+  .accordin {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-top: 15px;
+  }
+  /* Style for accordin on over and active accordin */
+  .active,
+  .accordin:hover {
+    background-color: red;
+    color: white;
+  }
+  /* Style for pannel inside the accordin */
+  .panel {
+    padding: 0 18px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #eee;
+    display: none;
+    overflow: hidden;
+  }
+  /* Style for sixth container */
+  .sixth-container {
+    text-align: center;
+    background-color: var(--primary-color-2);
+  }
+  .sixth-container-title{
+    margin-top: 10%;
+  }
+  /* Style for image inside the sixth container */
+  .sixth-container-image > img {
+    width: 100%;
+    max-width: 90%;
+  }
+  /* Style for red button */
+  .btn-1 {
+    background-color: red;
+    border: none;
+    z-index: 1;
+    font-size: 1.2rem;
+  }
+  .btn-1:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgba(229, 3, 3, 0.845);
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+      4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  .btn-1:hover {
+    color: #fff;
+  }
+  .btn-1:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn:active {
+    top: 2px;
+  }
+  .custom-btn-1 {
+    width: 60px;
+    height: 45px;
+    color: #fff;
+    background-color: red !important;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+  }
+  /* Style for seventh container */
+  .seventh-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seventh-container > div {
+    margin: 2%;
+  }
+  /* Style for video inside the seventh container */
+  .videos {
+    display: flex;
+    padding: 0% 10%;
+  }
+  .videos > div {
+    flex: 0.5;
+  }
+  /* Style for photos inside the seventh container */
+  .seventh-container-photos {
+    display: flex;
+  }
+  .seventh-container-photos > div {
+    flex: 1;
+  }
+  .photo img {
+    height: 400px;
+  }
+  .eight-card-image img{
+    border-radius: 9px;
+  }
+  /* Style for footer */
+  .footer {
+    color: white;
+    background-color: var(--primary-color-2);
+  }
+  .footer a {
+    color: white;
+  }
+  .footer a:hover {
+    color: rgba(255, 255, 255, 0.785);
+    text-decoration: underline;
+  }
+  .footer h3 {
+    color: white;
+  }
+  .footer img {
+    width: 100%;
+  }
+  
+    /*Small screen*/
+    @media screen and (max-width: 600px) {
+        /* Style for first container */
+        .first-container {
+          display: block;
+          justify-content: center;
+        }
+        .first-container-image img {
+          width: 100%;
+        }
+        .first-container-content {
+          text-align: center;
+          margin-bottom: 20px;
+          padding: 20px;
+        }
+        .first-container-content h1 {
+          margin: 0px;
+          margin-bottom: 20px;
+        }
+        /* Style for second container */
+        .second-card-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .second-card {
+          max-width: 60%;
+        }
+        /* Style for third container */
+        .third-container {
+          flex-direction: column;
+        }
+        .third-container-content {
+          text-align: center;
+        }
+        .third-container-image img {
+          width: 100%;
+        }
+        /* Making only one column display in smaller screens */
+        .fourth-container-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        /* Style for fifth container */
+        .fifth-container {
+          flex-direction: column-reverse;
+        }
+        .accordin {
+          width: 70%;
+        }
+        .panel {
+          width: 60%;
+        }
+        /* Style for sevent container */
+        .videos {
+          flex-direction: column;
+        }
+        .video {
+          width: 100%;
+        }
+        .video video {
+          width: 100%;
+        }
+        .seventh-container-photos {
+          flex-direction: column;
+        }
+        .photo {
+          width: 100%;
+        }
+        .photo img {
+          width: 100%;
+        }
+        /* Style for eight container */
+        .eight-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .eight-card-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20%;
+        }
+        .eight-card{
+            width: 60%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .eight-card img{
+            width: 100%;
+        }
+        /* Style for footer */
+        .footer {
+            display: flex;
+            flex-direction: column;
+          }
+      }
+      /*Big screen*/
+      @media (min-width: 600px) {
+        h2 {
+          font-size: 200%;
+        }
+        .first-container {
+          display: flex;
+          width: 100%;
+        }
+        .first-container > div {
+          flex: 1;
+        }
+        .first-container-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+        .first-container-content h1 {
+          margin: 0px;
+          font-size: 400%;
+        }
+        .first-container-image img {
+          width: 100%;
+        }
+        .second-container {
+          text-align: center;
+          padding: 30px;
+        }
+        .second-card-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 15px;
+          flex-wrap: wrap;
+        }
+        .second-card {
+          max-width: 20%;
+          min-width: 20%;
+        }
+        .third-container{
+          padding: 1% 10%;
+        }
+        .third-container-image {
+          display: flex;
+          justify-content: flex-end;
+        }
+        .third-container-image img {
+          width: 100%;
+        }
+        .fourth-container-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .accordin {
+          width: 50%;
+        }
+        .panel {
+          width: 45%;
+        }
+        .sixth-container-image {
+          padding: 0px 50px;
+        }
+        .footer {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+          justify-content: center;
+        }
+        .footer > div {
+          width: 18%;
+        }
+        .footer-left {
+          display: flex;
+          flex-direction: column;
+          margin-left: 6%;
+        }
+        .footer-middle-1 {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+        }
+        .footer-middle-2 {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .footer-right {
+          display: flex;
+          flex-direction: column;
+          margin-right: 6%;
+        }
+        .footer img {
+          margin-left: -20%;
+        }
+        .videos {
+          gap: 3%;
+        }
+        .video {
+          width: 30%;
+        }
+        .video video {
+          width: 100%;
+        }
+        .seventh-container-photos {
+          gap: 20px;
+        }
+        .photo {
+          width: 25%;
+        }
+        .photo img {
+          width: 100%;
+        }
+        .eight-container {
+          display: flex;
+          margin-bottom: 10%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 4% 2%;
+        }
+        .eight-card-container > div {
+          flex: 1;
+          justify-content: center;
+        }
+        .eight-card {
+          display: flex;
+          flex-direction: column;
+          width: 25%;
+        }
+        .eight-card-image img {
+          width: 100%;
+        }
+        .eight-card-container {
+          position: relative;
+          display: flex;
+          gap: 3%;
+          padding-bottom: 8%;
+        }
+    
+        .eight-card-image {
+          width: 100%;
+        }
+    
+        .eight-card-content {
+          position: absolute;
+          width: 15%;
+          height: 44%;
+          background-color: white;
+          padding: 2%;
+          text-align: center;
+          border-radius: 12px;
+        }
+        /* Specific styles for each card */
+        #card1 .eight-card-content {
+          left: 2%;
+          bottom: -10%;
+        }
+    
+        #card2 .eight-card-content {
+          left: 28%;
+          bottom: -10%;
+        }
+        #card3 .eight-card-content {
+          left: 53%;
+          bottom: -10%;
+        }
+        #card4 .eight-card-content {
+          left: 79%;
+          bottom: -10%;
+        }
+      }
+    
+
